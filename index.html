@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project 148</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: black">
+        <a-camera position="0 1 0"></a-camera>
+        <a-sky src="img/night sky.jpg"></a-sky>
+
+        <a-entity id="light">
+            <a-entity id="ligth-1" position="-1.71688 1.51201 -11.71531" scale="5.40238 5.61477 5.1969"
+                gltf-model="./models/streetlight/streetlight.glb"></a-entity>
+
+            <a-entity id="ligth-2" position="-12.71471 1.51201 -11.71531" scale="5.40238 5.61477 5.1969"
+                gltf-model="./models/streetlight/streetlight.glb"></a-entity>
+            <a-entity id="ligth-3" position="8.15494 1.51201 -11.71531" scale="5.40238 5.61477 5.1969"
+                gltf-model="./models/streetlight/streetlight.glb"></a-entity>
+        </a-entity>
+
+        <!-- trees -->
+        <a-entity id="trees">
+            <a-entity id="tree-1" position="1.3733 0 -11.97877" gltf-model="./models/tree/scene.gltf" shadow=""
+                scale="0.005 0.005 0.005" rotation="0 -112.80851436771752 0"></a-entity>
+            <a-entity id="tree-2" position="-4.81351 0 -11.97877" gltf-model="./models/tree/scene.gltf" shadow=""
+                scale="0.005 0.005 0.005" rotation="0 -20.945045158802372 0"></a-entity>
+            <a-entity id="tree-3" position="5.31568 0 -10.66621" gltf-model="./models/tree/scene.gltf" shadow=""
+                scale="0.005 0.005 0.005" rotation="0 -112.80851436771752 0"></a-entity>
+            <a-entity id="tree-5" position="10.70226 0 -12.88132" gltf-model="./models/tree/scene.gltf" shadow=""
+                scale="0.005 0.005 0.005" rotation="0 3.0928261781161837 0"></a-entity>
+            <a-entity id="tree-4" position="-8.94468 0 -11.45921" gltf-model="./models/tree/scene.gltf" shadow=""
+                scale="0.005 0.005 0.005" rotation="0 -112.80851436771752 0"></a-entity>
+        </a-entity>
+
+
+        <!-- path -->
+
+        <a-box color="grey" position="-0.27328 -0.00558 -8.28523" material="" geometry=""
+            scale="30.60127 0.06521 2.20309" id="path"></a-box>
+
+
+
+        <!-- dog -->
+        <a-entity id="dog" position="0.95931 0 -9.88763" gltf-model="./models/dog/scene.gltf" shadow=""
+            rotation="0 -103.06135635695195 0" scale="1.46652 1.82639 1.80681"></a-entity>
+
+        <a-entity id="man" position="-0.0312 0.45762 -9.88763" gltf-model="./models/sitting_bernie_ar_meme/scene.gltf"
+            shadow="" rotation="0 -18.724260744875302 0" scale="2.3369 1.86793 2.225"></a-entity>
+
+        <a-entity id="bench">
+            <a-entity id="bench-1" gltf-model="./models/bench/scene.gltf" position="0 0.5 -10.38434" rotation="">
+            </a-entity>
+            <a-entity id="bench-2" gltf-model="./models/bench/scene.gltf" position="9.92444 0.5 -10.38434" rotation="">
+            </a-entity>
+            <a-entity id="bench-3" gltf-model="./models/bench/scene.gltf" position="-11.02768 0.5 -10.38434"
+                rotation="">
+            </a-entity>
+        </a-entity>
+
+
+        <!-- floor & sky-->
+        <a-box scale="30.31765 0.2 30.03389" position="0 -0.1 0" src="img/grass.jpg" id="floor"></a-box>
+
+        <a-box scale="30.31765 0.2 30.03389" position="0 10 0" src="img/night sky.jpg" id="sky"></a-box>
+
+        <a-box scale="29.98377 0.2 10" position="0 4.97397 -14.85534" src="img/night sky.jpg" id="sky-2"
+            rotation="90 0 0"></a-box>
+
+        <a-box scale="30.318 0.2 10" position="0 4.974 14.904" src="img/night sky.jpg" id="sky-3" rotation="90 0 0">
+        </a-box>
+
+        <a-box scale="30 0.2 10" position="14.91836 4.974 -0.1947" src="img/night sky.jpg" id="sky-4"
+            rotation="90.00021045914971 90 0"></a-box>
+
+        <a-box scale="30.318 0.2 10" position="-15.09126 4.974 -0.1947" src="img/night sky.jpg" id="sky-5"
+            rotation="90.00021045914971 90 0"></a-box>
+    </a-scene>
+</body>
+
+</html>
